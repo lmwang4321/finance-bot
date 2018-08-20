@@ -1,0 +1,44 @@
+slots:
+  company:
+    type: text
+  start_time:
+    type: text
+  end_time:
+    type: text
+
+intents:
+  - greet
+  - goodbye
+  - affirm
+  - thanks
+  - thanks+goodbye
+  - deny
+  - ask_price
+
+entities:
+  - company
+  - start_time
+  - end_time
+
+templates:
+  utter_greet:
+    - "Hey, how can I help you?"
+  utter_goodbye:
+    - "Talk to you later!"
+    - "Goodbye :("
+    - "Bye!"
+    - "Have a great day!"
+  utter_thanks:
+    - "You are very welcome."
+    - "Glad I could help!"
+  utter_plot:
+    - text: "historical plot of {company} from {start_time} to {end_time} is shown below"
+      image: "1.jpg"
+      
+actions:
+  - utter_greet
+  - utter_goodbye
+  - utter_thanks
+  - actions.ActionPrice
+  - actions.ActionHistoricalPlot
+

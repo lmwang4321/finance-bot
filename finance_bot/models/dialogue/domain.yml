@@ -1,0 +1,60 @@
+%YAML 1.1
+---
+action_factory: null
+action_names:
+- utter_greet
+- utter_goodbye
+- utter_thanks
+- action_price
+- action_historical_plot
+actions:
+- utter_greet
+- utter_goodbye
+- utter_thanks
+- actions.ActionPrice
+- actions.ActionHistoricalPlot
+config:
+  store_entities_as_slots: true
+entities:
+- company
+- start_time
+- end_time
+intents:
+- greet:
+    use_entities: true
+- goodbye:
+    use_entities: true
+- affirm:
+    use_entities: true
+- thanks:
+    use_entities: true
+- thanks+goodbye:
+    use_entities: true
+- deny:
+    use_entities: true
+- ask_price:
+    use_entities: true
+slots:
+  company:
+    initial_value: null
+    type: rasa_core.slots.TextSlot
+  end_time:
+    initial_value: null
+    type: rasa_core.slots.TextSlot
+  start_time:
+    initial_value: null
+    type: rasa_core.slots.TextSlot
+templates:
+  utter_goodbye:
+  - text: Talk to you later!
+  - text: Goodbye :(
+  - text: Bye!
+  - text: Have a great day!
+  utter_greet:
+  - text: Hey, how can I help you?
+  utter_plot:
+  - image: 1.jpg
+    text: historical plot of {company} from {start_time} to {end_time} is shown below
+  utter_thanks:
+  - text: You are very welcome.
+  - text: Glad I could help!

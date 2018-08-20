@@ -1,0 +1,25 @@
+{
+  "states": [
+    "intent_affirm",
+    "intent_ask_price",
+    "intent_deny",
+    "intent_goodbye",
+    "intent_greet",
+    "intent_thanks",
+    "intent_thanks+goodbye",
+    "entity_company",
+    "entity_start_time",
+    "entity_end_time",
+    "slot_company_0",
+    "slot_end_time_0",
+    "slot_start_time_0",
+    "prev_action_listen",
+    "prev_action_restart",
+    "prev_action_default_fallback",
+    "prev_utter_greet",
+    "prev_utter_goodbye",
+    "prev_utter_thanks",
+    "prev_action_price",
+    "prev_action_historical_plot"
+  ]
+}

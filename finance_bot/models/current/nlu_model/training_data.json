@@ -1,0 +1,498 @@
+{
+  "rasa_nlu_data": {
+    "common_examples": [
+      {
+        "intent": "greet",
+        "text": "Hi"
+      },
+      {
+        "intent": "greet",
+        "text": "hey"
+      },
+      {
+        "intent": "greet",
+        "text": "heya"
+      },
+      {
+        "intent": "greet",
+        "text": "Hello"
+      },
+      {
+        "intent": "greet",
+        "text": "What's up"
+      },
+      {
+        "intent": "greet",
+        "text": "Heya"
+      },
+      {
+        "intent": "greet",
+        "text": "Greetings"
+      },
+      {
+        "intent": "greet",
+        "text": "Good  morning"
+      },
+      {
+        "intent": "greet",
+        "text": "Good afternoon"
+      },
+      {
+        "intent": "greet",
+        "text": "Good evening"
+      },
+      {
+        "intent": "greet",
+        "text": "Hey sir"
+      },
+      {
+        "intent": "greet",
+        "text": "Hi person"
+      },
+      {
+        "intent": "greet",
+        "text": "Hey robot"
+      },
+      {
+        "intent": "greet",
+        "text": "Hello bot"
+      },
+      {
+        "intent": "goodbye",
+        "text": "Bye"
+      },
+      {
+        "intent": "goodbye",
+        "text": "Goodbye"
+      },
+      {
+        "intent": "goodbye",
+        "text": "Talk to you later"
+      },
+      {
+        "intent": "goodbye",
+        "text": "See you"
+      },
+      {
+        "intent": "goodbye",
+        "text": "See you later"
+      },
+      {
+        "intent": "goodbye",
+        "text": "Bye bye"
+      },
+      {
+        "intent": "goodbye",
+        "text": "Bye for now"
+      },
+      {
+        "intent": "goodbye",
+        "text": "Goodbye bot"
+      },
+      {
+        "intent": "affirm",
+        "text": "yes"
+      },
+      {
+        "intent": "affirm",
+        "text": "yup"
+      },
+      {
+        "intent": "affirm",
+        "text": "yes, that sounds good"
+      },
+      {
+        "intent": "affirm",
+        "text": "sure"
+      },
+      {
+        "intent": "affirm",
+        "text": "definitely"
+      },
+      {
+        "intent": "affirm",
+        "text": "absolutely"
+      },
+      {
+        "intent": "affirm",
+        "text": "please do"
+      },
+      {
+        "intent": "affirm",
+        "text": "yes, please"
+      },
+      {
+        "intent": "affirm",
+        "text": "yes for sure"
+      },
+      {
+        "intent": "thanks",
+        "text": "thanks"
+      },
+      {
+        "intent": "thanks",
+        "text": "thank you"
+      },
+      {
+        "intent": "thanks",
+        "text": "Thanks a lot"
+      },
+      {
+        "intent": "thanks",
+        "text": "Thanks a bunch"
+      },
+      {
+        "intent": "thanks",
+        "text": "Thank you very much"
+      },
+      {
+        "intent": "thanks",
+        "text": "Thank you so much"
+      },
+      {
+        "intent": "thanks+goodbye",
+        "text": "Awesome. Talk to you later!"
+      },
+      {
+        "intent": "thanks+goodbye",
+        "text": "Thanks. Bye for now"
+      },
+      {
+        "intent": "thanks+goodbye",
+        "text": "Awesome, bye bye"
+      },
+      {
+        "intent": "thanks+goodbye",
+        "text": "That's great. Goodbye."
+      },
+      {
+        "intent": "thanks+goodbye",
+        "text": "Perfect. Talk to you later"
+      },
+      {
+        "intent": "thanks+goodbye",
+        "text": "Thanks! Goodbye"
+      },
+      {
+        "intent": "thanks+goodbye",
+        "text": "Th(ank you very much. Talk to you later"
+      },
+      {
+        "intent": "thanks+goodbye",
+        "text": "Thanks a lot. Bye for now"
+      },
+      {
+        "intent": "thanks+goodbye",
+        "text": "Thanks bot. Goodbye"
+      },
+      {
+        "intent": "deny",
+        "text": "No"
+      },
+      {
+        "intent": "deny",
+        "text": "Nope"
+      },
+      {
+        "intent": "deny",
+        "text": "Don't think so"
+      },
+      {
+        "intent": "deny",
+        "text": "Nooooo"
+      },
+      {
+        "intent": "deny",
+        "text": "No thanks"
+      },
+      {
+        "intent": "deny",
+        "text": "No, I don't"
+      },
+      {
+        "intent": "ask_price",
+        "entities": [
+          {
+            "start": 34,
+            "end": 38,
+            "value": "Tsla",
+            "entity": "company"
+          }
+        ],
+        "text": "I want to know the stock value of Tsla at the moment"
+      },
+      {
+        "intent": "ask_price",
+        "entities": [
+          {
+            "start": 35,
+            "end": 39,
+            "value": "Amzn",
+            "entity": "company"
+          }
+        ],
+        "text": "Can you tell me the stock price of Amzn at the moment"
+      },
+      {
+        "intent": "ask_price",
+        "entities": [
+          {
+            "start": 35,
+            "end": 39,
+            "value": "BILI",
+            "entity": "company"
+          }
+        ],
+        "text": "Tell me the current stock value of BILI?"
+      },
+      {
+        "intent": "ask_price",
+        "entities": [
+          {
+            "start": 32,
+            "end": 35,
+            "value": "PDD",
+            "entity": "company"
+          }
+        ],
+        "text": "Look for current stock price of PDD"
+      },
+      {
+        "intent": "ask_price",
+        "entities": [
+          {
+            "start": 21,
+            "end": 26,
+            "value": "GOOGL",
+            "entity": "company"
+          }
+        ],
+        "text": "Tell me the price of GOOGL right now"
+      },
+      {
+        "intent": "ask_price",
+        "entities": [
+          {
+            "start": 34,
+            "end": 38,
+            "value": "PCLN",
+            "entity": "company"
+          }
+        ],
+        "text": "I need the current stock value of PCLN?"
+      },
+      {
+        "intent": "ask_price",
+        "entities": [
+          {
+            "start": 30,
+            "end": 34,
+            "value": "BABA",
+            "entity": "company"
+          }
+        ],
+        "text": "What is the current shares of BABA?"
+      },
+      {
+        "intent": "ask_price",
+        "entities": [
+          {
+            "start": 34,
+            "end": 39,
+            "value": "TCEHY",
+            "entity": "company"
+          }
+        ],
+        "text": "How's the current share prices of TCEHY?"
+      },
+      {
+        "intent": "ask_price",
+        "entities": [
+          {
+            "start": 36,
+            "end": 41,
+            "value": "GOOGL",
+            "entity": "company"
+          }
+        ],
+        "text": "Can you show me the share prices of GOOGL at this time?"
+      },
+      {
+        "intent": "ask_price",
+        "entities": [
+          {
+            "start": 38,
+            "end": 43,
+            "value": "GOOGL",
+            "entity": "company"
+          }
+        ],
+        "text": "I wish to know current stock value of GOOGL"
+      },
+      {
+        "intent": "ask_historical_plot",
+        "entities": [
+          {
+            "start": 31,
+            "end": 33,
+            "value": "FB",
+            "entity": "company"
+          },
+          {
+            "start": 39,
+            "end": 47,
+            "value": "2018.2.9",
+            "entity": "start_time"
+          },
+          {
+            "start": 51,
+            "end": 59,
+            "value": "2018.7.5",
+            "entity": "end_time"
+          }
+        ],
+        "text": "show me the historical data of FB from 2018.2.9 to 2018.7.5"
+      },
+      {
+        "intent": "ask_historical_plot",
+        "entities": [
+          {
+            "start": 38,
+            "end": 42,
+            "value": "AAPL",
+            "entity": "company"
+          },
+          {
+            "start": 48,
+            "end": 56,
+            "value": "2018.5.9",
+            "entity": "start_time"
+          },
+          {
+            "start": 60,
+            "end": 68,
+            "value": "2018.8.1",
+            "entity": "end_time"
+          }
+        ],
+        "text": "I want to know the historical data of AAPL from 2018.5.9 to 2018.8.1"
+      },
+      {
+        "intent": "ask_historical_plot",
+        "entities": [
+          {
+            "start": 40,
+            "end": 44,
+            "value": "NFLX",
+            "entity": "company"
+          },
+          {
+            "start": 50,
+            "end": 58,
+            "value": "2018.7.3",
+            "entity": "start_time"
+          },
+          {
+            "start": 62,
+            "end": 70,
+            "value": "2018.8.2",
+            "entity": "end_time"
+          }
+        ],
+        "text": "Can you tell me the past information of NFLX from 2018.7.3 to 2018.8.2?"
+      },
+      {
+        "intent": "ask_historical_plot",
+        "entities": [
+          {
+            "start": 32,
+            "end": 37,
+            "value": "SIEGY",
+            "entity": "company"
+          },
+          {
+            "start": 43,
+            "end": 51,
+            "value": "2017.8.5",
+            "entity": "start_time"
+          },
+          {
+            "start": 55,
+            "end": 65,
+            "value": "2017.12.21",
+            "entity": "end_time"
+          }
+        ],
+        "text": "I need the historical values of SIEGY from 2017.8.5 to 2017.12.21"
+      },
+      {
+        "intent": "ask_historical_plot",
+        "entities": [
+          {
+            "start": 31,
+            "end": 35,
+            "value": "MOMO",
+            "entity": "company"
+          },
+          {
+            "start": 41,
+            "end": 49,
+            "value": "2018.1.2",
+            "entity": "start_time"
+          },
+          {
+            "start": 53,
+            "end": 61,
+            "value": "2018.3.2",
+            "entity": "end_time"
+          }
+        ],
+        "text": "show me the historical plot of MOMO from 2018.1.2 to 2018.3.2"
+      },
+      {
+        "intent": "ask_historical_plot",
+        "entities": [
+          {
+            "start": 20,
+            "end": 23,
+            "value": "WMT",
+            "entity": "company"
+          },
+          {
+            "start": 29,
+            "end": 37,
+            "value": "2018.5.2",
+            "entity": "start_time"
+          },
+          {
+            "start": 41,
+            "end": 49,
+            "value": "2018.6.1",
+            "entity": "end_time"
+          }
+        ],
+        "text": "Show me the plot of WMT from 2018.5.2 to 2018.6.1"
+      },
+      {
+        "intent": "ask_historical_plot",
+        "entities": [
+          {
+            "start": 28,
+            "end": 31,
+            "value": "TGT",
+            "entity": "company"
+          },
+          {
+            "start": 37,
+            "end": 45,
+            "value": "2018.2.5",
+            "entity": "start_time"
+          }
+        ],
+        "text": "can you show me the plot of TGT from 2018.2.5 to [2018.5.3]?"
+      }
+    ],
+    "regex_features": [],
+    "entity_synonyms": []
+  }
+}
