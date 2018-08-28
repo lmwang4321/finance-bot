@@ -11,6 +11,8 @@ from rasa_core.interpreter import RegexInterpreter
 from rasa_core.policies.keras_policy import KerasPolicy
 from rasa_core.policies.memoization import MemoizationPolicy
 from rasa_core.interpreter import RasaNLUInterpreter
+from rasa_nlu.model import Metadata, Interpreter
+
 
 from wxpy import *
 
@@ -31,15 +33,10 @@ def train_dialogue(domain_file = 'domain.yml',
 	agent.persist(model_path)
 	return agent
 	
-def run_finance_bot(serve_forever=True):
+def run_weather_bot(serve_forever=True):
 	interpreter = RasaNLUInterpreter('./models/current/nlu_model')
 	agent = Agent.load('./models/dialogue', interpreter = interpreter)
 
-	if serve_forever:
-		agent.handle_channel(ConsoleInputChannel())
-		
-	return agent
-'''
 	bot = Bot(console_qr=True, cache_path=True)
 	my_friend = bot.friends()
 	
@@ -50,8 +47,6 @@ def run_finance_bot(serve_forever=True):
 
 	@bot.register(bot.self, except_self=False)
 	def reply_self(msg):
-		intent = interpreter.parse(msg.text)["intent"]["name"]
-
 		ans = agent.handle_message(msg.text)
 		print(ans)
 
@@ -59,15 +54,31 @@ def run_finance_bot(serve_forever=True):
 
 	@bot.register(my_friend)
 	def reply_my_friend(msg):
-		intent = interpreter.parse(msg.text)["intent"]["name"]
+
 
 		ans = agent.handle_message(msg.text)
 		print(ans)
 
+		interpreter = Interpreter.load('models/current/nlu_model')
+		parser = interpreter.parse(msg.text)
+
+		intent = parser["intent"]["name"]
+		print(intent)
+		if intent == "ask_historical_plot":
+			msg.reply_image("1.jpg")
+
 		return ans[0]['text']
 	
 	embed()
+
 '''
+	if serve_forever:
+		agent.handle_channel(ConsoleInputChannel())
+
+	return agent
+
+'''
+
 if __name__ == '__main__':
 #	train_dialogue()
-	run_finance_bot()
+	run_weather_bot()

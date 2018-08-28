@@ -96,54 +96,40 @@
 - on [2017.5.3](time)
 - in [2018.7.2](time)
 - in [2017.5.19](time)
-<!-- - the [opening price](open)
+- the [opening price](open)
 - at the [opening](open)
 - the [closing price](close)
 - at the [close](close)
 - the [volume](volume)
 - the [trading volume](volume)
 - the [peak value](peak)
- - the [high point](peak)
+- the [high point](peak)
 - Tell me the [opening price](price) of [Amazon](company)
 - Tell me the [trasaction volume](volume)
-- the [change percent](percent) -->
+- the [change percent](percent)
 
 
 ## intent: ask_open
-- the opening price
-- at the opening
-- Tell me the opening price of [Amazon](company)
-- Show me the opening price of [Pinduoduo](company) on [2018.5.20](time)
+- the [opening price](open)
+- at the [opening](open)
 
 
 ## intent: ask_close
-- the closing price
-- at the close
-- Tell me the closing price of [Baidu](company)
-- Show me the closing price of [Walmart](company) on [2017.5.2](time)
-
+- the [closing price](close)
+- at the [close](close)
 
 ## intent: ask_volume
-- the volume
-- the trading volume
-- Tell me the transaction volume
-- Show me the transaction volume of [Bilibili](company)
-- Can you tell me the transaction volume of [Target](company) on [2017.10.2](time)?
-
+- the [volume](volume)
+- the [trading volume](volume)
 
 ## intent: ask_high
-- the peak value
-- the high point
-- Tell me the trasaction volume
-- show me the peak value of [Tencent](company)
-- Can you tell me the transaction volume of [Blizzard](company) on [2017.11.2](time)?
+- the [peak value](peak)
+- the [high point](peak)
+- Tell me the [trasaction volume](volume)
 
-
-<!-- ## intent: ask_change_percent
-- the change percent
-- tell me the change percent -->
-
-
+## intent: ask_change_percent
+- the [change percent](percent)
+- tell me the change percent
 ## intent: ask_historical_plot
 - show me the historical data of [Facebook](company) from [2018.2.9](start_time) to [2018.7.5](end_time)
 - I want to know the historical data of [Apple](company) from [2018.5.9](start_time) to [2018.8.1](end_time)
@@ -151,4 +137,4 @@
 - I need the historical values of [Siemens](company) from [2017.8.5](start_time) to [2017.12.21](end_time)
 - show me the historical plot of [Momo](company) from [2018.1.2](start_time) to [2018.3.2](end_time)
 - Show me the plot of [Walmart](company) from [2018.5.2](start_time) to [2018.6.1](end_time)
-- can you show me the plot of [Target](company) from [2018.2.5](start_time) to [2018.5.3](time)?
+- can you show me the plot of [Target](company) from [2018.2.5](start_time) to [2018.5.3]?

@@ -5,6 +5,10 @@ slots:
     type: text
   end_time:
     type: text
+  now:
+    type: text
+  time:
+    type: text
 
 intents:
   - greet
@@ -13,12 +17,21 @@ intents:
   - thanks
   - thanks+goodbye
   - deny
-  - ask_price
+  - inform
+  - ask_historical_plot
+  - ask_open
+  - ask_close
+  - ask_volume
+  - ask_high
+
 
 entities:
   - company
   - start_time
   - end_time
+  - now 
+  - time 
+
 
 templates:
   utter_greet:
@@ -34,11 +47,23 @@ templates:
   utter_plot:
     - text: "historical plot of {company} from {start_time} to {end_time} is shown below"
       image: "1.jpg"
+  utter_ask_time:
+    - "at what time?"
+    - "at which time?"
+  utter_ask_info:
+    - "what kind of information do you need?"
       
 actions:
   - utter_greet
   - utter_goodbye
   - utter_thanks
-  - actions.ActionPrice
+  - utter_ask_time
+  - utter_plot
+  - utter_ask_info
+  - actions.ActionOpen
+  - actions.ActionClose
+  - actions.ActionVolume
+  - actions.ActionCurrentPrice
+  - actions.ActionPeak
   - actions.ActionHistoricalPlot
 

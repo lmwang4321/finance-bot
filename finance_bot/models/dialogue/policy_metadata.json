@@ -2,21 +2,37 @@
   "action_fingerprints": {
     "action_listen": {
       "slots": [
-        "end_time",
         "company",
-        "start_time"
+        "now",
+        "start_time",
+        "time",
+        "end_time"
       ]
     },
     "utter_goodbye": {
       "slots": []
     },
-    "action_price": {
-      "slots": []
+    "action_current_price": {
+      "slots": [
+        "company"
+      ]
+    },
+    "action_volume": {
+      "slots": [
+        "company",
+        "time"
+      ]
+    },
+    "action_open": {
+      "slots": [
+        "company",
+        "time"
+      ]
     }
   },
   "rasa_core": "0.10.3",
   "max_histories": [
-    2,
+    5,
     5
   ],
   "ensemble_name": "rasa_core.policies.ensemble.SimplePolicyEnsemble",
